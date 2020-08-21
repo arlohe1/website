@@ -4,6 +4,7 @@ const Footer = () => (
     <footer
         style={{
             textAlign: `center`,
+            marginBottom: `1em`,
         }}
     >
         Made with{" "}

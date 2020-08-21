@@ -1,12 +1,10 @@
 import React from "react"
 
-import Header from "../components/Header"
 import Layout from "../components/layout"
 import { Icon, iconType } from "../components/icon"
 
 const IndexPage = () => (
     <Layout>
-        <Header />
         <div className="content">
             <p>Hi!</p>
             <p>
@@ -24,7 +22,7 @@ const IndexPage = () => (
                 as a software engineering intern. I'm also a co-host of{" "}
                 <a href="http://therelaxationstep.com">The Relaxation Step</a>.
             </p>
-            <div style={{ textAlign: `center`, marginTop: `1.5em` }}>
+            <div style={{ textAlign: `center`, marginTop: `2em` }}>
                 <Icon
                     iconType={iconType.LINKEDIN}
                     iconLink="http://linkedin.com/in/amitlohe"

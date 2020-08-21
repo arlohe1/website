@@ -1,6 +1,8 @@
 import React from "react"
 
 import Footer from "../components/footer"
+import Head from "../components/head"
+import Header from "../components/header"
 
 import "./layout.css"
 
@@ -14,8 +16,17 @@ const Layout = ({ children }) => (
             fontFamily: `trebuchet ms,Verdana,verdana ref,segoe ui,Candara,lucida grande,lucida sans unicode,lucida sans,Tahoma,sans-serif`,
         }}
     >
-        <div style={{ height: `95%` }}>{children}</div>
-        <div style={{ height: `5%` }}>
+        <Head />
+        <Header />
+        <div>{children}</div>
+        <div
+            style={{
+                position: `absolute`,
+                width: `100%`,
+                left: `0`,
+                bottom: `0`,
+            }}
+        >
             <Footer />
         </div>
     </div>
