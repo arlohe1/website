@@ -1,22 +1,49 @@
 import React from "react"
-import { Link } from "gatsby"
 
+import Header from "../components/Header"
 import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+import { Icon, iconType } from "../components/icon"
 
 const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-  </Layout>
+    <Layout>
+        <Header />
+        <div className="content">
+            <p>Hi!</p>
+            <p>
+                I'm a senior in the{" "}
+                <a href="https://fisher.wharton.upenn.edu/">M&T Program</a> at
+                the University of Pennsylvania where I'm pursuing dual degrees
+                in Computer Science and Business Analytics.
+            </p>
+            <p>
+                I've previously worked at{" "}
+                <a href="https://www.snap.com">Snap Inc</a>
+                <span role="img" aria-label="ghost">
+                    👻
+                </span>{" "}
+                as a software engineering intern. I'm also a co-host of{" "}
+                <a href="http://therelaxationstep.com">The Relaxation Step</a>.
+            </p>
+            <div style={{ textAlign: `center`, marginTop: `1.5em` }}>
+                <Icon
+                    iconType={iconType.LINKEDIN}
+                    iconLink="http://linkedin.com/in/amitlohe"
+                />
+                <Icon
+                    iconType={iconType.GITHUB}
+                    iconLink="http://github.com/arlohe1"
+                />
+                <Icon
+                    iconType={iconType.TWITTER}
+                    iconLink="http://twitter.com/amit_lohe"
+                />
+                <Icon
+                    iconType={iconType.EMAIL}
+                    iconLink="mailto:alohe@seas.upenn.edu"
+                />
+            </div>
+        </div>
+    </Layout>
 )
 
 export default IndexPage
