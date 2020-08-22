@@ -19,8 +19,24 @@ const IndexPage = () => (
                 <span role="img" aria-label="ghost">
                     👻
                 </span>{" "}
+                and <a href="https://www.twinelabs.com/">Twine Labs</a>
+                <span role="img" aria-label="thread">
+                    🧵
+                </span>{" "}
                 as a software engineering intern. I'm also a co-host of{" "}
-                <a href="http://therelaxationstep.com">The Relaxation Step</a>.
+                <a href="http://therelaxationstep.com">The Relaxation Step</a>
+                <span role="img" aria-label="microphone">
+                    🎙️
+                </span>
+                .
+            </p>
+            <p>
+                I'm interested in tech and sustainability. I'm also pretty good
+                at identifying tree species
+                <span role="img" aria-label="tree">
+                    🌳
+                </span>
+                , especially those native to Kentucky.
             </p>
             <div style={{ textAlign: `center`, marginTop: `2em` }}>
                 <Icon
