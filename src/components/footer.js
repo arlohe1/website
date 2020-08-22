@@ -3,7 +3,6 @@ import React from "react"
 const Footer = () => (
     <footer
         style={{
-            textAlign: `center`,
             marginBottom: `1em`,
         }}
     >

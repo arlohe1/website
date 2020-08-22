@@ -18,13 +18,10 @@ const Layout = ({ children }) => (
     >
         <Head />
         <Header />
-        <div>{children}</div>
+        <div style={{ marginBottom: `50%` }}>{children}</div>
         <div
             style={{
-                position: `absolute`,
-                width: `100%`,
-                left: `0`,
-                bottom: `0`,
+                textAlign: `center`,
             }}
         >
             <Footer />
