@@ -9,7 +9,11 @@ const NotFoundPage = () => (
     >
         <h1>Not found.</h1>
         <p>
-            This route doesn&#39;t exist. Go <a href="/" style={{ textDecoration: "underline" }}>home</a>.
+            This route doesn&#39;t exist. Go{" "}
+            <a href="/" style={{ textDecoration: "underline" }}>
+                home
+            </a>
+            .
         </p>
     </div>
 );
