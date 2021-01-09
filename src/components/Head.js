@@ -1,5 +1,5 @@
-import React from "react"
-import { Helmet } from "react-helmet"
+import React from "react";
+import { Helmet } from "react-helmet";
 
 const Head = () => (
     <Helmet>
@@ -15,11 +15,8 @@ const Head = () => (
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://metatags.io/" />
         <meta property="twitter:title" content="Amit Lohe" />
-        <meta
-            property="twitter:description"
-            content="Hi! Welcome to my website."
-        />
+        <meta property="twitter:description" content="Hi! Welcome to my website." />
     </Helmet>
-)
+);
 
-export default Head
+export default Head;

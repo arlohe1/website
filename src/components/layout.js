@@ -1,10 +1,10 @@
-import React from "react"
+import React from "react";
 
-import Footer from "../components/footer"
-import Head from "../components/head"
-import Header from "../components/header"
+import Footer from "../components/footer";
+import Head from "../components/head";
+import Header from "../components/header";
 
-import "./layout.css"
+import "./layout.css";
 
 const Layout = ({ children }) => (
     <div
@@ -27,8 +27,6 @@ const Layout = ({ children }) => (
             <Footer />
         </div>
     </div>
-)
+);
 
-export default Layout
-
-//margin: `3rem auto`,
+export default Layout;

@@ -1,21 +1,19 @@
-import React from "react"
+import React from "react";
 
-import Layout from "../components/layout"
-import { Icon, iconType } from "../components/icon"
+import Layout from "../components/layout";
+import { Icon, iconType } from "../components/icon";
 
 const IndexPage = () => (
     <Layout>
         <div className="content">
             <p>Hi!</p>
             <p>
-                I'm a senior in the{" "}
-                <a href="https://fisher.wharton.upenn.edu/">M&T Program</a> at
-                the University of Pennsylvania where I'm pursuing dual degrees
-                in Computer Science and Business Analytics.
+                I'm a senior in the <a href="https://fisher.wharton.upenn.edu/">M&T Program</a> at
+                the University of Pennsylvania where I'm pursuing dual degrees in Computer Science
+                and Business Analytics.
             </p>
             <p>
-                I've previously worked at{" "}
-                <a href="https://www.snap.com">Snap Inc</a>
+                I've previously worked at <a href="https://www.snap.com">Snap Inc</a>
                 <span role="img" aria-label="ghost">
                     👻
                 </span>{" "}
@@ -31,33 +29,21 @@ const IndexPage = () => (
                 .
             </p>
             <p>
-                I'm interested in tech and sustainability. I'm also pretty good
-                at identifying tree species
+                I'm interested in tech and sustainability. I'm also pretty good at identifying tree
+                species
                 <span role="img" aria-label="tree">
                     🌳
                 </span>
                 , especially those native to Kentucky.
             </p>
             <div style={{ textAlign: `center`, marginTop: `2em` }}>
-                <Icon
-                    iconType={iconType.LINKEDIN}
-                    iconLink="http://linkedin.com/in/amitlohe"
-                />
-                <Icon
-                    iconType={iconType.GITHUB}
-                    iconLink="http://github.com/arlohe1"
-                />
-                <Icon
-                    iconType={iconType.TWITTER}
-                    iconLink="http://twitter.com/amit_lohe"
-                />
-                <Icon
-                    iconType={iconType.EMAIL}
-                    iconLink="mailto:alohe@seas.upenn.edu"
-                />
+                <Icon iconType={iconType.LINKEDIN} iconLink="http://linkedin.com/in/amitlohe" />
+                <Icon iconType={iconType.GITHUB} iconLink="http://github.com/arlohe1" />
+                <Icon iconType={iconType.TWITTER} iconLink="http://twitter.com/amit_lohe" />
+                <Icon iconType={iconType.EMAIL} iconLink="mailto:alohe@seas.upenn.edu" />
             </div>
         </div>
     </Layout>
-)
+);
 
-export default IndexPage
+export default IndexPage;
