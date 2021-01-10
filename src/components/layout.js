@@ -1,7 +1,7 @@
 import React from "react";
 
 import Footer from "../components/footer";
-import Head from "../components/head";
+import Head from "../components/Head";
 import Header from "../components/header";
 
 import "./layout.css";
