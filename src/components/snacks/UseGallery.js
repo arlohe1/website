@@ -10,18 +10,10 @@ const UseGallery = () => {
                 nodes {
                     id
                     name
-                    modifiedTime
                     childImageSharp {
                         id
                         fixed(width: 184) {
                             ...GatsbyImageSharpFixed
-                        }
-                        fields {
-                            exif {
-                                meta {
-                                    dateTaken
-                                }
-                            }
                         }
                     }
                 }
@@ -32,18 +24,13 @@ const UseGallery = () => {
     return data.allFile.nodes
         .filter((node) => node.childImageSharp !== null)
         .map((node) => {
-            const dateTaken = node.childImageSharp.fields.exif.meta.dateTaken;
             return {
                 id: node.id,
                 name: node.name,
                 fixed: node.childImageSharp.fixed,
-                date:
-                    dateTaken !== null && dateTaken < node.modifiedTime
-                        ? dateTaken
-                        : node.modifiedTime,
             };
         })
-        .sort((a, b) => (a.date >= b.date ? 1 : -1))
+        .sort((a, b) => (a.name >= b.name ? 1 : -1))
         .reverse();
 };
 

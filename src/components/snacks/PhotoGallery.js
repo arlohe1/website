@@ -25,7 +25,7 @@ const PhotoGallery = () => {
             <br />
             <br />
             {images
-                .filter(({ id, name, fixed, date }) => date.substr(0, 4) === "" + activeYear)
+                .filter(({ id, name, fixed }) => parseInt(name.substr(6, 10)) ===  activeYear)
                 .map(({ id, name, fixed }) => (
                     <Img style={{ margin: "5px" }} key={id} fixed={fixed} title={name} />
                 ))}
