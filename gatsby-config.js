@@ -18,5 +18,15 @@ module.exports = {
                 icon: `src/images/favicon.png`, // Favicon, This path is relative to the root of the site.
             },
         },
+        {
+            resolve: `gatsby-source-filesystem`,
+            options: {
+                name: `snacks`,
+                path: `${__dirname}/content/snacks`,
+            },
+        },
+        `gatsby-transformer-sharp`,
+        `gatsby-plugin-sharp`,
+        `gatsby-plugin-sharp-exif`,
     ],
 };
